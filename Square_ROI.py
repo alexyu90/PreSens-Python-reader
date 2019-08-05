@@ -49,6 +49,8 @@ while(True):
     elif cv2.waitKey(1) & 0xFF == ord('-'):
         size = size - 5
         
+# Npte: need to look into implementing Async in Python to make the square adjectment section above more effective        
+        
     cv2.rectangle(frame, (x - size, y - size), (x + size, y + size), (255,255,255), 4) #Pintamos los circulos en la mascara    
     cv2.imshow('frame',frame)
     
